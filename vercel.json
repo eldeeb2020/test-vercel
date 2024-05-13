@@ -8,7 +8,7 @@
 
     {
         "src": "/build/assets/(.*)",
-        "dest": "/public/assets/"
+        "dest": "/public/"
     },
 
 
