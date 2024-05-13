@@ -6,10 +6,12 @@
 },
 "routes": [
 
-    {   
-        "src": "/build/(.*)",
-        "dest": "/public/build/"
+    {
+        "src": "/(css|js|images)/(.*)",
+        "dest": "public/$1/$2"
     },
+
+    
     
     {
         "src": "/(.*)",
