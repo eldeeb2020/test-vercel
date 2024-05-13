@@ -7,17 +7,21 @@
 "routes": [
 
     {
-        "src": "/build/(.*)",
-        "dest": "/public/assets/"
-    },
-    {
-        "src": "/favicon/(.*)",
-        "dest": "/public/favicon/"
-    },
-    {
-        "src": "/(.*)",
+        "src": "/public/(./.(css|js))",
+        "dest": "/public/$1"
+        },
+        {
+        "src": "/build/assets/(./.(css|js))",
+        "dest": "/build/assets/$1"
+        },
+        {
+        "src": "/public/storage(./.(png|jpg))",
+        "dest": "/public/storage/$1"
+        },
+        {
+        "src": "/(.)",
         "dest": "/api/index.php"
-    }
+        }
 ],
 
 "env": {
